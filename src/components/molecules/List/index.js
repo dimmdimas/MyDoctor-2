@@ -55,7 +55,8 @@ const styles = StyleSheet.create({
     desc: {
         color: colors.text.primary,
         fontSize: 12,
-        fontFamily: fonts.primary[300]
+        fontFamily: fonts.primary[300],
+        textTransform: 'capitalize'
     },
     content: {
         flex: 1,

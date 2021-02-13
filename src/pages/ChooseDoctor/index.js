@@ -45,11 +45,11 @@ const ChooseDoctor = ({navigation, route}) => {
         return (
           <List
             key={doctor.id}
-            onPress={() => navigation.navigate('Chatting')}
             type="next"
             profile={{ uri: doctor.data.photo }}
             name={doctor.data.fullName}
             desc={doctor.data.gender}
+            onPress={() => navigation.navigate('DoctorProfile', doctor)}
           />
         )
       })}
