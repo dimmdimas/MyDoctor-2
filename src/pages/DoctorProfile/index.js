@@ -14,7 +14,7 @@ const DoctorProfile = ({ navigation, route}) => {
             <ProfileItem label="Tempat Praktik" value={dataDoctor.data.hospital_address} />
             <ProfileItem label="No. STR" value={dataDoctor.data.str_number} />
             <View style={styles.action}>
-                <Tombol title="Start Consultation" onPress={() => navigation.navigate('Chatting')}/>
+                <Tombol title="Start Consultation" onPress={() => navigation.navigate('Chatting', dataDoctor)}/>
             </View>
         </View>
     )
